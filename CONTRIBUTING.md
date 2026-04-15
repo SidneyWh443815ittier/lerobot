@@ -13,3 +13,5 @@ If you want to file an issue for any Flatcar repository, please use the [central
 Any guidelines specific to this repository that are not covered in the main contribution guide will be listed here.
 
 <!-- Add repo-specific guidelines below this line -->
+
+> **Personal fork note:** This is my personal learning fork of lerobot. I'm not actively reviewing PRs or issues here — please direct any contributions to the upstream [flatcar/lerobot](https://github.com/flatcar/lerobot) repository instead.
