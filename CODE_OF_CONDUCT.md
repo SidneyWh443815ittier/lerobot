@@ -7,3 +7,7 @@ For details on how we uphold community standards across all Flatcar repositories
 ## Reporting
 
 If you experience or witness unacceptable behavior, please report it following the process outlined in the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md).
+
+## Note
+
+This is a personal fork used for learning and experimentation. For issues related to the upstream project, please refer to the [original repository](https://github.com/flatcar/lerobot).
