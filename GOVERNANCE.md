@@ -17,3 +17,4 @@ Any governance details specific to this repository will be listed here.
 - Forked to explore LeRobot's policy training pipelines and dataset tooling.
 - Upstream changes from `flatcar/lerobot` will be periodically merged as needed.
 - Issues and pull requests on this fork will not be actively monitored.
+- Primary focus: experimenting with ACT and Diffusion Policy on custom robot datasets.
