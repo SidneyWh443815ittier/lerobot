@@ -13,3 +13,5 @@ If you experience or witness unacceptable behavior, please report it following t
 This is a personal fork used for learning and experimentation. For issues related to the upstream project, please refer to the [original repository](https://github.com/flatcar/lerobot).
 
 As this is a personal fork, there is no active community here. If you stumbled upon this repo, feel free to explore, but please direct any meaningful contributions or discussions to the upstream project linked above.
+
+> **Personal note:** I'm using this fork primarily to experiment with robot learning algorithms and understand the codebase. No PRs or issues will be monitored here.
