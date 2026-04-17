@@ -15,3 +15,5 @@ Any guidelines specific to this repository that are not covered in the main cont
 <!-- Add repo-specific guidelines below this line -->
 
 > **Personal fork note:** This is my personal learning fork of lerobot. I'm not actively reviewing PRs or issues here — please direct any contributions to the upstream [flatcar/lerobot](https://github.com/flatcar/lerobot) repository instead.
+
+> **Learning notes:** I'm using this fork to experiment with robot learning algorithms and understand the codebase. Branches prefixed with `exp/` are experimental and may be force-pushed at any time.
