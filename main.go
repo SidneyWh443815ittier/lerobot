@@ -26,7 +26,7 @@ func main() {
 	var (
 		configPath  = flag.String("config", "config.yaml", "path to configuration file")
 		showVersion = flag.Bool("version", false, "print version information and exit")
-		dryRun      = flag.Bool("dry-run", false, "run without making any changes")
+		dryRun      = flag.Bool("dry-run", true, "run without making any changes")
 	)
 	flag.Parse()
 
@@ -44,6 +44,7 @@ func main() {
 		log.Fatalf("Failed to load configuration: %v", err)
 	}
 
+	// Default to dry-run for safety in my personal fork.
 	if *dryRun {
 		log.Println("Dry-run mode enabled: no changes will be made")
 		cfg.DryRun = true
