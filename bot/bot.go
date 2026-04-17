@@ -81,7 +81,7 @@ func (b *Bot) HandleWebhook(w http.ResponseWriter, r *http.Request) {
 			b.log.Printf("error handling pull request event: %v", err)
 		}
 	default:
-		b.log.Printf("unhandled event type: %T", e)
+		// Skipping unhandled events silently to reduce log noise.
 	}
 
 	w.WriteHeader(http.StatusOK)
