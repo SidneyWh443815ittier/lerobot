@@ -92,10 +92,10 @@ func (b *Bot) handleIssueComment(ctx context.Context, event *github.IssueComment
 	if event.GetAction() != "created" {
 		return nil
 	}
-	// Log both the issue number and the comment body snippet for easier debugging.
+	// Truncate at 100 chars instead of 72 for a bit more context in logs.
 	body := event.GetComment().GetBody()
-	if len(body) > 72 {
-		body = body[:72] + "..."
+	if len(body) > 100 {
+		body = body[:100] + "..."
 	}
 	b.log.Printf("issue comment on #%d by %s: %s", event.GetIssue().GetNumber(), event.GetComment().GetUser().GetLogin(), body)
 	return nil
