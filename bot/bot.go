@@ -92,8 +92,9 @@ func (b *Bot) handleIssueComment(ctx context.Context, event *github.IssueComment
 	if event.GetAction() != "created" {
 		return nil
 	}
-	// Truncate long comments to 72 chars to fit nicely in my terminal alongside the prefix.
-	const truncateAt = 72
+	// Increased truncation limit from 72 to 120 chars; 72 was too aggressive
+	// and made it hard to understand the comment content at a glance.
+	const truncateAt = 120
 	body := event.GetComment().GetBody()
 	if len(body) > truncateAt {
 		body = body[:truncateAt] + "..."
