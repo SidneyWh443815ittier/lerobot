@@ -19,3 +19,4 @@ Any governance details specific to this repository will be listed here.
 - Issues and pull requests on this fork will not be actively monitored.
 - Primary focus: experimenting with ACT and Diffusion Policy on custom robot datasets.
 - Secondary focus: testing sim-to-real transfer using ManiSkill2 environments.
+- Tertiary focus: evaluating inference latency on edge hardware (Jetson Orin).
