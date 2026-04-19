@@ -26,7 +26,8 @@ func main() {
 	var (
 		configPath  = flag.String("config", "config.yaml", "path to configuration file")
 		showVersion = flag.Bool("version", false, "print version information and exit")
-		dryRun      = flag.Bool("dry-run", true, "run without making any changes")
+		// Keeping dry-run default as true for safety; must explicitly pass -dry-run=false to make real changes.
+		dryRun = flag.Bool("dry-run", true, "run without making any changes")
 	)
 	flag.Parse()
 
@@ -35,7 +36,8 @@ func main() {
 		os.Exit(0)
 	}
 
-	log.SetFlags(log.LstdFlags | log.Lshortfile)
+	// Include microseconds in log timestamps for easier debugging.
+	log.SetFlags(log.LstdFlags | log.Lshortfile | log.Lmicroseconds)
 	log.Printf("Starting lerobot %s (commit: %s)", Version, Commit)
 
 	// Load configuration from file.
