@@ -17,3 +17,8 @@ This is a personal fork for learning and experimentation. For issues or question
 **Fork owner:** [@jdoe](https://github.com/jdoe)  
 **Purpose:** Experimenting with robot learning configurations and custom environments.  
 **Notes:** Primarily focused on tweaking ACT policy hyperparameters and testing custom gym environments locally. Not intended for production use.
+
+### Active Experiments
+
+- Testing lower chunk sizes (32 vs default 100) for ACT policy on low-memory hardware
+- Evaluating custom reward shaping in a simulated pick-and-place task
