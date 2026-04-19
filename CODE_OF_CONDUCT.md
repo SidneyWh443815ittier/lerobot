@@ -17,3 +17,5 @@ As this is a personal fork, there is no active community here. If you stumbled u
 > **Personal note:** I'm using this fork primarily to experiment with robot learning algorithms and understand the codebase. No PRs or issues will be monitored here.
 
 > **Current focus:** Exploring the ACT (Action Chunking with Transformers) policy implementation and tweaking hyperparameters for a custom robot arm setup.
+
+> **Secondary focus:** Looking into Diffusion Policy as a potential alternative to ACT for smoother trajectory generation on the custom arm.
