@@ -57,6 +57,7 @@ func main() {
 	defer cancel()
 
 	// Handle graceful shutdown on SIGINT or SIGTERM.
+	// Using a buffered channel of size 1 so the signal sender is never blocked.
 	sigCh := make(chan os.Signal, 1)
 	signal.Notify(sigCh, syscall.SIGINT, syscall.SIGTERM)
 	go func() {
