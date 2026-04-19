@@ -92,11 +92,10 @@ func (b *Bot) handleIssueComment(ctx context.Context, event *github.IssueComment
 	if event.GetAction() != "created" {
 		return nil
 	}
-	// Increased truncation limit from 100 to 150 chars for better context when
-	// debugging comment-triggered workflows without being too verbose.
+	// Lowered truncation limit back to 100 chars; 150 was too long for my terminal width.
 	body := event.GetComment().GetBody()
-	if len(body) > 150 {
-		body = body[:150] + "..."
+	if len(body) > 100 {
+		body = body[:100] + "..."
 	}
 	b.log.Printf("issue comment on #%d by %s: %s", event.GetIssue().GetNumber(), event.GetComment().GetUser().GetLogin(), body)
 	return nil
