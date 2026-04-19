@@ -26,3 +26,5 @@ Any guidelines specific to this repository that are not covered in the main cont
 > - Train a policy: `python lerobot/scripts/train.py policy=act env=aloha`
 > - Evaluate a checkpoint: `python lerobot/scripts/eval.py -p outputs/train/checkpoints/last/pretrained_model`
 > - Visualize a dataset: `python lerobot/scripts/visualize_dataset.py --repo-id lerobot/pusht --episode-index 0`
+> - Run a single test file verbosely: `pytest tests/test_policies.py -v`
+> - Profile training step: `python -m cProfile -s cumtime lerobot/scripts/train.py policy=act env=aloha`
