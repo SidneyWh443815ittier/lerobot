@@ -24,3 +24,5 @@ Any guidelines specific to this repository that are not covered in the main cont
 > - Run tests: `pytest tests/ -x -q`
 > - Check formatting: `pre-commit run --all-files`
 > - Train a policy: `python lerobot/scripts/train.py policy=act env=aloha`
+> - Evaluate a checkpoint: `python lerobot/scripts/eval.py -p outputs/train/checkpoints/last/pretrained_model`
+> - Visualize a dataset: `python lerobot/scripts/visualize_dataset.py --repo-id lerobot/pusht --episode-index 0`
