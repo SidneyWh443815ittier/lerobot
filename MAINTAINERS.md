@@ -14,5 +14,6 @@ Any maintainers specific to this repository will be listed here.
 
 This is a personal fork for learning and experimentation. For issues or questions related to this fork, open an issue in this repository.
 
-**Fork owner:** [@yourusername](https://github.com/yourusername)  
-**Purpose:** Experimenting with robot learning configurations and custom environments.
+**Fork owner:** [@jdoe](https://github.com/jdoe)  
+**Purpose:** Experimenting with robot learning configurations and custom environments.  
+**Notes:** Primarily focused on tweaking ACT policy hyperparameters and testing custom gym environments locally. Not intended for production use.
