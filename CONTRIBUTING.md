@@ -19,3 +19,8 @@ Any guidelines specific to this repository that are not covered in the main cont
 > **Learning notes:** I'm using this fork to experiment with robot learning algorithms and understand the codebase. Branches prefixed with `exp/` are experimental and may be force-pushed at any time.
 
 > **Local setup note:** To get started locally, I use Python 3.10 with a conda env named `lerobot`. Run `pip install -e '.[dev]'` after cloning. See `experiments/README.md` for notes on my specific hardware setup.
+
+> **Useful commands I keep forgetting:**
+> - Run tests: `pytest tests/ -x -q`
+> - Check formatting: `pre-commit run --all-files`
+> - Train a policy: `python lerobot/scripts/train.py policy=act env=aloha`
